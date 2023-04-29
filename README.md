@@ -1,5 +1,37 @@
 ### Hi I'm Yamid 👋
 
+```java
+import lombok.Data;
+
+@Data
+public class YamiDev {
+    private String[] pronouns;
+    private String[] code;
+    private String[] tools;
+}
+
+import java.util.Arrays;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
+
+public class Main {
+    public static final Logger LOG = Logger.getLogger(Main.class.getName());
+    public static void main(String[] args) {
+        BasicConfigurator.configure();
+        YamiDev yamiDev = new YamiDev();
+        yamiDev.setPronouns(new String[] { "he", "him" });
+        yamiDev.setCode(new String[] { "Java", "TypeScript", "HTML", "CCs" });
+        yamiDev.setTools(new String[] { "Angular" ,"Spring-boot", "Git",
+                                        "MySQL", "SQL Server", "Postgres Db" });
+        LOG.info("YamiDev:");
+        LOG.info("Pronouns: " + Arrays.toString(yamiDev.getPronouns()));
+        LOG.info("Code: " + Arrays.toString(yamiDev.getCode()));
+        LOG.info("Tools: " + Arrays.toString(yamiDev.getTools()));
+    }
+}
+
+```
+
 <!--
 **YamithDev/YamithDev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
