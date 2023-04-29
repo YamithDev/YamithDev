@@ -1,7 +1,6 @@
 ### Hi I'm Yamid 👋
 
 ```java
-import lombok.Data;
 
 @Data
 public class YamiDev {
@@ -9,10 +8,6 @@ public class YamiDev {
     private String[] code;
     private String[] tools;
 }
-
-import java.util.Arrays;
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Logger;
 
 public class Main {
     public static final Logger LOG = Logger.getLogger(Main.class.getName());
